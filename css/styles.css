@@ -107,6 +107,10 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -131,6 +135,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .site-nav-item {
   padding: 24px 0;
+  position: relative;
+  color: var(--Ocean)
 }
 
 .site-nav-link {
@@ -138,6 +144,17 @@ h1,h2,h3,h4,h5,h6,p,ul {
   line-height: 1.5;
   color: var(--Navy-blue);
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--Ocean);
+  border-radius: 2px;
 }
 
 .logo-black {
@@ -166,6 +183,9 @@ h1,h2,h3,h4,h5,h6,p,ul {
   color: var(--Slate);
 }
 
+.address-item-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*
   |============================
   | Hero styles (Section #1)
