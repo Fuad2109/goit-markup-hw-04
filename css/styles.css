@@ -1,0 +1,399 @@
+/*
+  |============================|
+  |  Root
+  |============================|
+*/
+:root {
+
+  /*
+  |===|Fonts|===|
+*/
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /*
+  |===|Colors|===|
+*/
+  /*Primary Brand*/
+  --Iris: #4D5AE5;
+  /*Pressed State*/
+  --Ocean: #404BBF;
+  /*Dark*/
+  --Navy-blue: #2E2F42;
+  /*Success*/
+  --Green: #31D0AA;
+  /*Text*/
+  --Slate: #434455;
+  /*Subtle Text*/
+  --Light-Slate: #8E8F99;
+  /*Accent*/
+  --Cornflower: #E7E9FC;
+  /*Light*/
+  --Cloud: #F4F4FD;
+  /*Modal Overlay*/
+  --Navy-Blue-Modal: #2E2F42;
+  /*Hero Background*/
+  --Grey: #2E2F42;
+  /*White Background*/
+  --White: #FFFFFF;
+  /*Modal Background*/
+  --Dairy: #FCFCFC;
+}
+
+/*
+  |============================
+  | Basic styles
+  |============================
+*/
+
+body {
+  font-family: var(--primary-font);
+  color: var(--Slate);
+  background-color: var(--White);
+  letter-spacing: 0.02em;
+}
+/*
+|===|Reset>>>|===|
+*/
+
+h1,h2,h3,h4,h5,h6,p,ul {
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+|===|Reset<<<|===|
+*/
+
+.logo {
+  color: var(--Iris);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*
+  |============================
+  | Header styles
+  |============================
+*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+  |===|Nav menu style|===|
+*/
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.site-nav-item {
+  padding: 24px 0;
+}
+
+.site-nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Navy-blue);
+  padding: 24px 0;
+}
+
+.logo-black {
+  color: var(--Navy-blue);
+}
+
+.list .link:hover,
+.list .link:focus {
+  color: var(--Ocean);
+}
+
+/*
+  |===|Header contacts style|===|
+*/
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+.address-list-item {
+  line-height: 1.5;
+  color: var(--Slate);
+}
+
+/*
+  |============================
+  | Hero styles (Section #1)
+  |============================
+*/
+.hero {
+  background-color: var(--Navy-blue);
+  padding: 188px 0;
+}
+
+.hero-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--White);
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+}
+
+.hero-btn {
+  background-color: var(--Iris);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--White);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-btn-position {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--Ocean);
+  color: var(--Ocean)
+}
+
+/*
+  |============================
+  | Benefits styles (Section #2)
+  |============================
+*/
+
+.benefits {
+  padding: 120px 0
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4)
+}
+
+.benefits-subtitle {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--Navy-blue);
+  margin-bottom: 8px;
+}
+
+.benefits-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*
+  |============================
+  | Our Team styles (Section #3)
+  |============================
+*/
+.team {
+  background-color: var(--Cloud);
+  padding: 120px 0;
+}
+
+.team-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--Navy-blue);
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-item {
+  background-color: var(--White);
+  width: calc((1158 - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-employee-container{
+  padding: 32px 0;
+}
+
+.team-subtitle {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--Navy-blue);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*
+  |============================
+  |  Portfolio style (Section #4)
+  |============================
+*/
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.porfolio-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--Navy-blue);
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-list-item {
+  background: var(--White);
+  width: calc((1158 - 48px) / 3);
+}
+
+.portfolio-app-container{
+  padding: 32px 16px;
+  border: 1px solid var(--Cornflower);
+  border-top: none;
+}
+
+.portfolio-subtitle {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--Navy-blue);
+  margin-bottom: 8px;
+}
+
+.porfolio-text {
+  line-height: 1.5;
+}
+
+/*
+  |============================
+  | Footer style
+  |============================
+*/
+
+.footer {
+  background-color: var(--Navy-blue);
+  padding: 100px 0;
+}
+
+.bottmom.logo{
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-white {
+  color: var(--Cloud);
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: var(--Cloud);
+  max-width: 264px
+}
