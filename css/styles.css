@@ -204,11 +204,7 @@ ul {
   padding-top: 120px;
   padding-bottom: 120px;
   padding: 188px 0;
-  background-image: 
-  linear-gradient
-  (rgba(46, 47, 66, 0.7),
-  rgba(46, 47, 66, 0.7)),
-  url(../images/peopleoffice.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -379,10 +375,9 @@ ul {
   gap: 24px;
 }
 
-.team-icon-list{
+.team-social-link-item{
   width: 40px;
   height: 40px;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link{
@@ -393,6 +388,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:focus {
